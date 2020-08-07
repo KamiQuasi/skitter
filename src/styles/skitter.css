@@ -1,0 +1,49 @@
+:root {
+    --blue: #1F99C5;
+    --red: #ee0000;
+    --hero-gray: #4F5255;
+    --hr-gray: #707070;
+    --date-gray: #A5A6A7;
+    --dark-blue: #0F4C62;
+    --accordion-inactive: #E5E5E5;
+    --hero-text: Red Hat Text;
+  }
+
+  body {
+    display: grid;
+    grid-template-areas: 
+    "header header header header header"
+    "nav hero hero hero hero"
+    "nav content content content content";
+    font: var(--hero-text);
+    background: #f5f5f5;
+  }
+
+  body.solution-home {
+      grid-template-areas:
+      "header header header header header"
+      "nav hero hero hero hero"
+      "nav content content content dashboard";
+  }
+
+  body.solution {
+    grid-template-areas:
+    "header header header header header"
+    "nav content content content dashboard";
+}
+
+body > header {
+    grid-area: header;
+}
+body > pfe-accordion {
+    grid-area: nav;
+}
+body > pfe-band {
+    grid-area: hero;
+}
+
+cpx-solution-card {
+    width: 380px;
+    height: 288px;
+    font-size: 12px;
+}

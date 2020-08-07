@@ -1,0 +1,4 @@
+envs:
+  dev:
+    url: https://spaship-prod.ext.us-west.dc.prod.paas.redhat.com
+  

@@ -1,0 +1,64 @@
+/* DEMO FILE ONLY, NOT FOR PRODUCTION USE */
+:root {
+  --theme--container-spacer: 16px;
+  --theme--container-padding: 16px;
+  --theme--content-spacer: 24px;
+  --theme--font-size: 16px;
+  --theme--line-height: 1.5;
+  --theme--font-family: "Overpass", Overpass, Helvetica, helvetica, arial, sans-serif;
+  --theme--font-family--heading: "Overpass", Overpass, Helvetica, helvetica, arial, sans-serif;
+  --theme--font-family--code: "Overpass Mono", Consolas, Monaco,  Andale Mono , monospace;
+  --theme--font-size--heading--alpha: 32px;
+  --theme--font-size--heading--beta: 24px;
+  --theme--font-size--heading--gamma: 21px;
+  --theme--font-size--heading--delta: 18px;
+  --theme--font-size--heading--epsilon: 16px;
+  --theme--font-size--heading--zeta: 14px;
+  --theme--font-weight--light: 300;
+  --theme--font-weight--normal: 500;
+  --theme--font-weight--semi-bold: 600;
+  --theme--font-weight--bold: 700;
+  --theme--surface--border-width: 1px;
+  --theme--surface--border-width--heavy: 4px;
+  --theme--surface--border-style: solid;
+  --theme--surface--border-radius: 3px;
+  --theme--surface--border-width--active: 3px;
+  --theme--icon-size: 1em;
+  --theme--ui--element--size: 20px;
+  --theme--ui--border-width: 1px;
+  --theme--ui--border-width--active: 3px;
+  --theme--ui--border-style: solid;
+  --theme--ui--border-radius: 2px;
+  --theme--ui--focus-outline-width: 1px;
+  --theme--ui--focus-outline-style: solid;
+  --theme--link-decoration: none;
+  --theme--link-decoration--hover: underline;
+  --theme--link-decoration--focus: underline;
+  --theme--link-decoration--visited: none;
+  --theme--link-decoration--on-dark: none;
+  --theme--link-decoration--hover--on-dark: underline;
+  --theme--link-decoration--focus--on-dark: underline;
+  --theme--link-decoration--visited--on-dark: none;
+  --theme--link-decoration--on-saturated: underline;
+  --theme--link-decoration--hover--on-saturated: underline;
+  --theme--link-decoration--focus--on-saturated: underline;
+  --theme--link-decoration--visited--on-saturated: underline;
+  --theme--grid-breakpoint--xs: 0;
+  --theme--grid-breakpoint--sm: 576px;
+  --theme--grid-breakpoint--md: 768px;
+  --theme--grid-breakpoint--lg: 992px;
+  --theme--grid-breakpoint--xl: 1200px;
+  --theme--box-shadow--sm: 0 0.0625rem 0.125rem 0 rgba(3, 3, 3, 0.2);
+  --theme--box-shadow--md: 0 0.125rem 0.0625rem 0.0625rem rgba(3, 3, 3, 0.12), 0 0.25rem 0.6875rem 0.375rem rgba(3, 3, 3, 0.05);
+  --theme--box-shadow--lg: 0 0.1875rem 0.4375rem 0.1875rem rgba(3, 3, 3, 0.13), 0 0.6875rem 1.5rem 1rem rgba(3, 3, 3, 0.12);
+  --theme--box-shadow--inset: inset 0 0 0.625rem 0 #fafafa;
+  --theme--animation-speed: 0.3s;
+  --theme--animation-timing: cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  --theme--opacity: 0.09;
+  --theme--modal: 99;
+  --theme--navigation: 98;
+  --theme--overlay: 97;
+  --theme--content: 0;
+}
+
+/*# sourceMappingURL=pfe-vars.css.map */

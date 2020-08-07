@@ -1,0 +1,139 @@
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 16px;
+  padding: var(--pfe-theme--container-spacer, 16px);
+}
+
+:host {
+  display: none;
+  overflow: hidden;
+  will-change: height;
+  border-color: transparent;
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  width: var(--pfe-accordion--Width, 100%);
+  max-width: calc(100% - 4px);
+  max-width: calc(100% - var(--pfe-theme--surface--border-width--heavy, 4px));
+  height: auto;
+  position: relative;
+  background-color: transparent;
+  background-color: var(--pfe-accordion--BackgroundColor, transparent);
+  color: #3c3f42;
+  color: var(--pfe-accordion--Color, var(--pfe-broadcasted--text, #3c3f42));
+  border: 0 solid #d2d2d2;
+  border: 0 var(--pfe-theme--surface--border-style, solid) var(--pfe-accordion--BorderColor, var(--pfe-theme--color--surface--border, #d2d2d2));
+  border-top-width: 1px;
+  border-top-width: var(--pfe-accordion--BorderTopWidth, var(--pfe-theme--surface--border-width, 1px));
+  border-right-width: 0;
+  border-right-width: var(--pfe-accordion--BorderRightWidth, 0);
+  border-bottom-width: 1px;
+  border-bottom-width: var(--pfe-accordion--BorderBottomWidth, var(--pfe-theme--surface--border-width, 1px));
+  border-left: 4px solid transparent;
+  border-left: var(--pfe-accordion--BorderLeftWidth, var(--pfe-theme--surface--border-width--heavy, 4px)) var(--pfe-theme--surface--border-style, solid) var(--pfe-accordion--BorderColor--accent, transparent);
+  -webkit-box-shadow: var(--pfe-accordion--BoxShadow);
+          box-shadow: var(--pfe-accordion--BoxShadow);
+  z-index: var(--pfe-accordion--ZIndex);
+}
+
+:host:hover {
+  --pfe-accordion--BorderColor--accent: var(--pfe-accordion--accent, var(--pfe-theme--color--ui-accent, #06c));
+}
+
+:host *, :host *::before, :host *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:host(.animating) {
+  display: block;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+.container {
+  --pfe-accordion--BoxShadow: none;
+  padding: var(--pfe-accordion__panel-container--Padding);
+  --pfe-accordion__panel-container--Padding: 0 calc(var(--pfe-accordion__base--Padding, var(--pfe-theme--container-spacer, 16px)) * 3) var(--pfe-accordion__base--Padding, var(--pfe-theme--container-spacer, 16px)) calc(var(--pfe-accordion__base--Padding, var(--pfe-theme--container-spacer, 16px)) * 1.5);
+}
+
+.container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+:host([pfe-disclosure="true"]) .container {
+  --pfe-accordion__panel-container--Padding: 0 calc(var(--pfe-accordion__base--Padding, var(--pfe-theme--container-spacer, 16px)) * 3) var(--pfe-accordion__base--Padding, var(--pfe-theme--container-spacer, 16px)) calc((var(--pfe-accordion__base--Padding, var(--pfe-theme--container-spacer, 16px)) * 1.5) - 4px);
+}
+
+:host(:last-of-type[expanded]) {
+  margin-bottom: 0;
+}
+
+:host([expanded]),
+:host(.animating) {
+  --pfe-accordion--BorderColor: var(--pfe-theme--color--surface--border, #d2d2d2);
+  --pfe-accordion--BorderRightWidth: var(--pfe-theme--surface--border-width, 1px);
+  --pfe-accordion--BorderLeftWidth: var(--pfe-theme--surface--border-width--heavy, 4px);
+  --pfe-accordion--BackgroundColor: white;
+  --pfe-accordion--Color: var(--pfe-theme--color--text, #151515);
+  --pfe-accordion--BorderColor--accent: var(--pfe-accordion--accent, var(--pfe-theme--color--ui-accent, #06c));
+  --pfe-accordion--BoxShadow: 0 5px var(--pfe-theme--surface--border-width--heavy, 4px) rgba(140, 140, 140, 0.35);
+  --pfe-accordion--ZIndex: 3;
+  --pfe-accordion--BorderTopWidth: 0;
+  --pfe-accordion--BoxShadow: 0 5px var(--pfe-theme--surface--border-width--heavy, 4px) rgba(140, 140, 140, 0.35);
+  display: block;
+  position: relative;
+  opacity: 1;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  :host([expanded]),
+  :host(.animating) {
+    /* IE10+ */
+    border-top-width: 0;
+    border-left-color: #06c;
+    border-left-color: var(--pfe-theme--color--ui-accent, #06c);
+    border-right-color: #d2d2d2;
+    border-right-color: var(--pfe-theme--color--surface--border, #d2d2d2);
+  }
+}
+
+:host([on="dark"][expanded]),
+:host([on="dark"].animating) {
+  --pfe-accordion--BackgroundColor: rgba(247, 247, 249, 0.1);
+  --pfe-accordion--Color: var(--pfe-broadcasted--text, #3c3f42);
+  --pfe-accordion--BorderColor--accent: var(--pfe-theme--color--ui-accent--on-dark, #73bcf7);
+  --pfe-accordion--BoxShadow: none;
+  --pfe-accordion--BorderTopWidth: 0;
+  --pfe-accordion--BoxShadow: none;
+}
+
+:host([on="saturated"][expanded]),
+:host([on="saturated"].animating) {
+  --pfe-accordion--BackgroundColor: rgba(0, 0, 0, 0.2);
+  --pfe-accordion--Color: var(--pfe-broadcasted--text, #3c3f42);
+  --pfe-accordion--BorderColor--accent: var(--pfe-theme--color--ui-accent--on-saturated, #fff);
+  --pfe-accordion--BoxShadow: none;
+  --pfe-accordion--BorderTopWidth: 0;
+  --pfe-accordion--BoxShadow: none;
+}
+
+:host([on="light"][expanded]),
+:host([on="light"].animating) {
+  --pfe-accordion--BorderColor: var(--pfe-theme--color--surface--border, #d2d2d2);
+  --pfe-accordion--BorderRightWidth: var(--pfe-theme--surface--border-width, 1px);
+  --pfe-accordion--BorderLeftWidth: var(--pfe-theme--surface--border-width--heavy, 4px);
+  --pfe-accordion--BackgroundColor: white;
+  --pfe-accordion--Color: var(--pfe-theme--color--text, #151515);
+  --pfe-accordion--BorderColor--accent: var(--pfe-accordion--accent, var(--pfe-theme--color--ui-accent, #06c));
+  --pfe-accordion--BoxShadow: 0 5px var(--pfe-theme--surface--border-width--heavy, 4px) rgba(140, 140, 140, 0.35);
+  --pfe-accordion--ZIndex: 3;
+  --pfe-accordion--BorderTopWidth: 0;
+  --pfe-accordion--BoxShadow: 0 5px var(--pfe-theme--surface--border-width--heavy, 4px) rgba(140, 140, 140, 0.35);
+}
+
+/*# sourceMappingURL=pfe-accordion-panel.css.map */

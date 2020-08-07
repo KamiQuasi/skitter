@@ -1,0 +1,90 @@
+:host {
+  background-color: #4f5255;
+  background-color: var(--pfe-status--BackgroundColor, var(--pfe-theme--color--feedback--default, #4f5255));
+  position: fixed;
+  right: 0;
+  right: var(--pfe-status--Right, 0);
+  top: 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3rem;
+}
+
+:host([hidden]) {
+  display: none;
+}
+
+.flag {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.flag > span {
+  color: #fff;
+  color: var(--pfe-status--Color, var(--pfe-theme--color--text--on-dark, #fff));
+  display: inline-block;
+  text-transform: uppercase;
+  text-transform: var(--pfe-status--TextTransform, uppercase);
+  font-size: 0.875rem;
+  font-family: "Overpass", Overpass, Helvetica, helvetica, arial, sans-serif;
+  font-family: var(--pfe-theme--font-family, "Overpass", Overpass, Helvetica, helvetica, arial, sans-serif);
+  font-size: 16px;
+  font-size: var(--pfe-theme--font-size, 16px);
+  font-weight: bold;
+  line-height: 1em;
+  white-space: nowrap;
+}
+
+:host([pfe-status="important"]) {
+  --pfe-status--BackgroundColor: var(--pfe-theme--color--feedback--important, #d73401);
+  --pfe-status--Color: var(--pfe-theme--color--text--on-dark, #fff);
+}
+
+:host([pfe-status="critical"]) {
+  --pfe-status--BackgroundColor: var(--pfe-theme--color--feedback--critical, #bb0000);
+  --pfe-status--Color: var(--pfe-theme--color--text--on-dark, #fff);
+}
+
+:host([pfe-status="success"]) {
+  --pfe-status--BackgroundColor: var(--pfe-theme--color--feedback--success, #2e7d32);
+  --pfe-status--Color: var(--pfe-theme--color--text--on-dark, #fff);
+}
+
+:host([pfe-status="info"]) {
+  --pfe-status--BackgroundColor: var(--pfe-theme--color--feedback--info, #0277bd);
+  --pfe-status--Color: var(--pfe-theme--color--text--on-dark, #fff);
+}
+
+:host([pfe-status="moderate"]),
+:host([pfe-status="warning"]) {
+  --pfe-status--BackgroundColor: var(--pfe-theme--color--feedback--moderate, #ffc024);
+  --pfe-status--Color: var(--pfe-theme--color--text, #151515);
+}
+
+:host([pfe-status="normal"]) {
+  --pfe-status--BackgroundColor: var(--pfe-theme--color--ui-accent, #06c);
+  --pfe-status--Color: var(--pfe-theme--color--ui-accent--text, #fff);
+}
+
+:host([pfe-status="accent"]) {
+  --pfe-status--BackgroundColor: var(--pfe-theme--color--ui-accent, #06c);
+  --pfe-status--Color: var(--pfe-theme--color--ui-accent--text, #fff);
+}
+
+/*# sourceMappingURL=pfe-page-status.css.map */
