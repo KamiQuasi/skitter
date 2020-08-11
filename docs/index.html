@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKIT SPAship Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="scripts/pfe/pfe-styles/dist/pfe-base.min.css" rel="stylesheet">
+    <link href="scripts/pfe/pfe-styles/dist/pfe-context.min.css" rel="stylesheet">
+    <link href="scripts/pfe/pfe-styles/dist/pfe-layouts.min.css" rel="stylesheet">
+    <link href="styles/skitter.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>Red Hat Solutions Kit</h2>
+        <cpx-search-box>Search</cpx-search-box>
+        <cpx-login><a href="dashboard.html">Log in</a></cpx-login>
+    </header>
+    <nav>
+        <pfe-cta class="home" pfe-priority="primary">
+            <a href="#">Home</a>
+        </pfe-cta>
+        <pfe-accordion>
+            <pfe-accordion-header>
+                <h2>Solution categories</h2>
+            </pfe-accordion-header>
+            <pfe-accordion-panel expanded>
+                <a href="#">AI/Machine Learning</a>
+                <a href="#">Application runtime</a>
+                <a href="#">Big data</a>
+                <a href="#">Database</a>
+                <a href="#">Developer tools</a>
+                <a href="#">Integration &amp; delivery</a>
+                <a href="#">Logging &amp; tracing</a>
+                <a href="#">Monitoring</a>
+                <a href="#">Networking</a>
+                <a href="#">Security</a>
+                <a href="#">Storage</a>
+                <a href="#">Streaming &amp; messaging</a>
+            </pfe-accordion-panel>
+            <pfe-accordion-header>
+                <h2>Solution Authoring</h2>
+            </pfe-accordion-header>
+            <pfe-accordion-panel expanded>
+                <a href="#">Authoring help</a>
+                <a href="#">Solution editor</a>
+            </pfe-accordion-panel>
+        </pfe-accordion>
+    </nav>
+    <main>
+        <pfe-band pfe-color="darker" pfe-aside-desktop="left" pfe-aside-mobile="top" pfe-aside-height="body">
+            <article>
+                <h1>How it works</h1>
+                <p>This content is here to introduce users to the idea of using this service. Ipsum faucibus vitae 
+                    aliquet nec. Cursus eget nunc scelerisque viverra. Turpis nunc eget lorem dolor sed viverra. 
+                    Cursus vitae congue mauris rhoncus. Justo donec enim diam vulputate ut pharetra sit amet aliquam. 
+                    At urna condimentum mattis pellentesque id nibh tortor. Ullamcorper eget nulla facilisi etiam 
+                    dignissim diam quis. Lacus vel facilisis volutpat est. Congue nisi vitae suscipit tellus mauris a. 
+                    Sed felis eget velit aliquet sagittis id consectetur purus ut. Et malesuada fames ac turpis egestas 
+                    sed tempus urna et. Nunc aliquet bibendum enim facilisis gravida neque convallis.</p>
+                    <!--<a href="#">Something</a> <img src="images/arrow-alt-circle-right.svg"> <a href="#">Something</a> <img src="images/arrow-alt-circle-right.svg"> <a href="#">Something</a> -->
+            </article>
+            <img slot="pfe-band--aside" src="images/skit-board.png">
+        </pfe-band>
+        <section>
+            <h2>Featured Solutions</h2>
+            <cpx-solution-card author="Contributor" duration="30" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <cpx-solution-card author="Contributor" duration="30" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <cpx-solution-card author="Contributor" duration="30" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <cpx-solution-card author="Contributor" duration="30" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <cpx-solution-card author="Contributor" duration="30" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <cpx-solution-card author="Contributor" duration="30" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <cpx-solution-card author="Contributor" duration="30" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <cpx-solution-card author="Contributor" duration="30" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+        </section>
+    </main>
+    <cpx-user></cpx-user>
+
+    <script type="module" src="scripts/pfe/pfe-accordion/dist/pfe-accordion.min.js"></script>
+    <script type="module" src="scripts/pfe/pfe-card/dist/pfe-card.min.js"></script>
+    <script type="module" src="scripts/pfe/pfe-band/dist/pfe-band.min.js"></script>
+    <script type="module" src="scripts/pfe/pfe-badge/dist/pfe-badge.min.js"></script>
+    <script type="module" src="scripts/pfe/pfe-datetime/dist/pfe-datetime.min.js"></script>
+    <script type="module" src="scripts/pfe/pfe-cta/dist/pfe-cta.min.js"></script>
+    <script type="module" src="scripts/cpx-solution-card.js"></script>
+    <script type="module" src="scripts/cpx-user.js"></script>
+</body>
+</html>

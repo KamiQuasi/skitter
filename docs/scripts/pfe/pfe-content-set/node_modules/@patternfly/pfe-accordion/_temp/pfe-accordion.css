@@ -1,0 +1,42 @@
+:host {
+  --pfe-accordion--BorderColor--accent: transparent;
+  --pfe-accordion--BorderColor: var(--pfe-theme--color--surface--border, #d2d2d2);
+  --pfe-accordion--BorderTopWidth: var(--pfe-theme--surface--border-width, 1px);
+  --pfe-accordion--BorderRightWidth: 0;
+  --pfe-accordion--BorderBottomWidth: var(--pfe-theme--surface--border-width, 1px);
+  --pfe-accordion--BorderLeftWidth: var(--pfe-theme--surface--border-width--heavy, 4px);
+  --pfe-accordion--Color: var(--pfe-broadcasted--text, #3c3f42);
+  --pfe-accordion--TextAlign: left;
+  --pfe-accordion--accent: var(--pfe-theme--color--ui-accent, #06c);
+  --pfe-accordion__base--Padding: var(--pfe-theme--container-spacer, 16px);
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  color: #3c3f42;
+  color: var(--pfe-accordion--Color, var(--pfe-broadcasted--text, #3c3f42));
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  :host {
+    /* IE10+ */
+    background-color: #fff !important;
+    color: #151515 !important;
+  }
+}
+
+:host([on="dark"]) {
+  --pfe-accordion--accent: var(--pfe-theme--color--ui-accent--on-dark, #73bcf7);
+}
+
+:host([on="saturated"]) {
+  --pfe-accordion--accent: var(--pfe-theme--color--ui-accent--on-saturated, #fff);
+}
+
+:host([pfe-disclosure="true"]) {
+  --pfe-accordion--BorderRightWidth: var(--pfe-theme--surface--border-width, 1px);
+  --pfe-accordion--BorderLeftWidth: var(--pfe-theme--surface--border-width, 1px);
+  --pfe-accordion--BorderColor--accent: var(--pfe-theme--color--surface--border, #d2d2d2);
+}
+
+/*# sourceMappingURL=pfe-accordion.css.map */

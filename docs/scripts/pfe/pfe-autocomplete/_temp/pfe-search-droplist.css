@@ -1,0 +1,66 @@
+:host {
+  position: relative;
+  display: none;
+  font-family: "Overpass", Overpass, Helvetica, helvetica, arial, sans-serif;
+  font-family: var(--pfe-theme--font-family, "Overpass", Overpass, Helvetica, helvetica, arial, sans-serif);
+  font-size: 16px;
+  font-size: var(--pfe-theme--font-size, 16px);
+  line-height: 1.5;
+  line-height: var(--pfe-theme--line-height, 1.5);
+}
+
+:host([open]) {
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.droplist {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  max-height: 250px;
+  z-index: 9999;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+ul {
+  font-family: "Overpass", Overpass, Helvetica, helvetica, arial, sans-serif;
+  font-family: var(--pfe-theme--font-family, "Overpass", Overpass, Helvetica, helvetica, arial, sans-serif);
+  font-size: 16px;
+  font-size: var(--pfe-theme--font-size, 16px);
+  line-height: 1.5;
+  line-height: var(--pfe-theme--line-height, 1.5);
+  border-top: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  cursor: pointer;
+}
+
+ul li {
+  display: list-item;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+}
+
+ul li.active {
+  background-color: #f0f0f0;
+  background-color: var(--pfe-theme--color--surface--lighter, #f0f0f0);
+}
+
+/*# sourceMappingURL=pfe-search-droplist.css.map */

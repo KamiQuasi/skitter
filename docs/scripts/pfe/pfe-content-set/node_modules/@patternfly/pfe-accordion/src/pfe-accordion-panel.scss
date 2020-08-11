@@ -1,0 +1,64 @@
+@import "shared-assets";
+
+/// ===========================================================================
+/// DEFAULT ACCORDION PANEL
+/// ===========================================================================
+
+:host {
+   @include pfe-collapsible($state: closed);
+   @include pfe-accordion-props;
+   @include pfe-box-sizing;
+}
+
+:host(.animating) {
+  display: block;
+  transition: height 0.3s ease-in-out;
+}
+
+.container {
+  @include pfe-clearfix;
+  @include pfe-panel-container;
+  @include pfe-print-local((
+    panel-container: (
+      Padding: 0 calc(#{pfe-local(Padding, $region: base)} * 3) #{pfe-local(Padding, $region: base)} calc(#{pfe-local(Padding, $region: base)} * 1.5)
+    )
+  ));
+
+  :host([pfe-disclosure="true"]) & {
+    @include pfe-print-local((
+      panel-container: (
+        Padding: 0 calc(#{pfe-local(Padding, $region: base)} * 3) pfe-local(Padding, $region: base) calc((#{pfe-local(Padding, $region: base)} * 1.5) - 4px)
+      )
+    ));
+  }
+}
+
+:host(:last-of-type[expanded]) {
+  margin-bottom: 0;
+}
+
+/// ===========================================================================
+/// EXPANDED STYLES
+/// ===========================================================================
+
+:host([expanded]),
+:host(.animating) {
+  $accordion: pfe-accordion-variables($state: expanded);
+  @include pfe-print-local($accordion);
+  @include pfe-panel-variables;
+  @include pfe-collapsible($state: open);
+  @include browser-query(ie11) {
+    border-top-width: 0;
+    border-left-color: pfe-var(ui-accent);
+    border-right-color: pfe-var(surface--border);
+  }
+}
+
+@each $context in $THEMES {
+  :host([on="#{$context}"][expanded]),
+  :host([on="#{$context}"].animating){
+    $accordion: pfe-accordion-variables($state: expanded, $theme: #{$context});
+    @include pfe-print-local($accordion);
+    @include pfe-panel-variables($theme: #{$context});
+  }
+}
