@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKIT SPAship Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="scripts/pfe/pfe-styles/dist/pfe-base.min.css" rel="stylesheet">
+    <link href="scripts/pfe/pfe-styles/dist/pfe-context.min.css" rel="stylesheet">
+    <link href="scripts/pfe/pfe-styles/dist/pfe-layouts.min.css" rel="stylesheet">
+    <link href="styles/skitter.css" rel="stylesheet">
+</head>
+<body class="solution">
+    <header>
+        <h2>Red Hat Solutions Kit</h2>
+        <cpx-search-box>Search</cpx-search-box>
+        <cpx-login><a href="dashboard.html">User Name</a></cpx-login>
+    </header>
+    <nav>
+        <pfe-cta class="home" pfe-priority="primary">
+            <a href="#">Home</a>
+        </pfe-cta>
+        <pfe-accordion>
+            <pfe-accordion-header>
+                <h2>My solution library</h2>
+            </pfe-accordion-header>
+            <pfe-accordion-panel expanded>
+                <a href="#">In Progress</a>
+                <a href="#">Bookmarks</a>
+                <a href="#">Completed solutions</a>
+            </pfe-accordion-panel>
+            <pfe-accordion-header>
+                <h2>Solution categories</h2>
+            </pfe-accordion-header>
+            <pfe-accordion-panel expanded>
+                <a href="#">AI/Machine Learning</a>
+                <a href="#">Application runtime</a>
+                <a href="#">Big data</a>
+                <a href="#">Database</a>
+                <a href="#">Developer tools</a>
+                <a href="#">Integration &amp; delivery</a>
+                <a href="#">Logging &amp; tracing</a>
+                <a href="#">Monitoring</a>
+                <a href="#">Networking</a>
+                <a href="#">Security</a>
+                <a href="#">Storage</a>
+                <a href="#">Streaming &amp; messaging</a>
+            </pfe-accordion-panel>
+            <pfe-accordion-header>
+                <h2>Solution Authoring</h2>
+            </pfe-accordion-header>
+            <pfe-accordion-panel expanded>
+                <a href="#">Authoring help</a>
+                <a href="#">Solution editor</a>
+            </pfe-accordion-panel>
+        </pfe-accordion>
+    </nav>
+    <main>
+        <pfe-band pfe-color="darker" pfe-aside-desktop="left" pfe-aside-mobile="top" pfe-aside-height="body">
+            <article>
+                <h1>Connecting applications using asynchronous messaging</h1>
+                <p>Learn how to create a simple integration with built-in monitoring, so you can enable fault tolerant communication between applications.</p>
+                    <!--<a href="#">Something</a> <img src="images/arrow-alt-circle-right.svg"> <a href="#">Something</a> <img src="images/arrow-alt-circle-right.svg"> <a href="#">Something</a> -->
+            </article>
+        </pfe-band>
+        <section>
+            <article>
+                <cpx-asciidoc>
+                    ASCIIDoc rendered here
+                </cpx-asciidoc>
+                <cpx-solution-progress>
+                    Solution Progress
+                </cpx-solution-progress>
+            </article>
+            <cpx-solution-status>
+                Solution Status
+            </cpx-solution-status>
+        </section>
+    </main>
+    <cpx-user></cpx-user>
+
+    <script type="module" src="scripts/pfe/pfe-accordion/dist/pfe-accordion.min.js"></script>
+    <script type="module" src="scripts/pfe/pfe-card/dist/pfe-card.min.js"></script>
+    <script type="module" src="scripts/pfe/pfe-band/dist/pfe-band.min.js"></script>
+    <script type="module" src="scripts/pfe/pfe-badge/dist/pfe-badge.min.js"></script>
+    <script type="module" src="scripts/pfe/pfe-datetime/dist/pfe-datetime.min.js"></script>
+    <script type="module" src="scripts/pfe/pfe-cta/dist/pfe-cta.min.js"></script>
+    <script type="module" src="scripts/cpx-solution-card.js"></script>
+    <script type="module" src="scripts/cpx-user.js"></script>
+</body>
+</html>

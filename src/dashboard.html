@@ -14,13 +14,21 @@
     <header>
         <h2>Red Hat Solutions Kit</h2>
         <cpx-search-box>Search</cpx-search-box>
-        <cpx-login><a href="dashboard.html">Log in</a></cpx-login>
+        <cpx-login><a href="dashboard.html">User Name</a></cpx-login>
     </header>
     <nav>
         <pfe-cta class="home" pfe-priority="primary">
             <a href="#">Home</a>
         </pfe-cta>
         <pfe-accordion>
+            <pfe-accordion-header>
+                <h2>My solution library</h2>
+            </pfe-accordion-header>
+            <pfe-accordion-panel expanded>
+                <a href="#">In Progress</a>
+                <a href="#">Bookmarks</a>
+                <a href="#">Completed solutions</a>
+            </pfe-accordion-panel>
             <pfe-accordion-header>
                 <h2>Solution categories</h2>
             </pfe-accordion-header>
@@ -63,6 +71,50 @@
             <img slot="pfe-band--aside" src="images/skit-board.png">
         </pfe-band>
         <section>
+            <h2>In Progress</h2>
+            <cpx-solution-card author="Contributor" status="in-progress" duration="30" complete="13" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <cpx-solution-card author="Contributor" status="in-progress" duration="50" complete="1" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <cpx-solution-card author="Contributor" status="in-progress" duration="60" complete="24" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <cpx-solution-card author="Contributor" status="in-progress" duration="10" complete="80" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <h2>Bookmarks</h2>
+            <cpx-solution-card author="Contributor" status="in-progress" bookmark duration="60" complete="45" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <cpx-solution-card author="Contributor" status="complete" bookmark duration="60" complete="100" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
+            <cpx-solution-card author="Contributor" bookmark duration="45" url="solution.html">
+                <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                <h4>Contributor Name | <pfe-datetime datetime="January 1, 2010" type="local" day="numeric" month="long" year="numeric" locale="en-gb">January 1, 2010</pfe-datetime></h4>
+                <hr>
+                <p>Et sint proident amet aliqua aliquip. Ut eu cupidatat anim et consectetur amet ut anim duis enim sunt sunt. Mollit aliqua aliqua tempor velit nisi aute mollit Lorem aute. Sit magna ipsum velit occaecat velit deserunt quis. Adipisicing nulla do occaecat non. Dolor quis irure irure in proident qui.</p>
+            </cpx-solution-card>
             <h2>Featured Solutions</h2>
             <cpx-solution-card author="Contributor" duration="30" url="solution.html">
                 <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
